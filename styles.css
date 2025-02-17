@@ -1,58 +1,105 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa;
   color: #333;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Estilos para el encabezado */
 header {
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: white;
-  padding: 10px 0;
+  padding: 40px 0;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #ffdd57;
 }
 
 /* Estilos para las secciones */
 section {
-  padding: 20px;
+  padding: 60px 20px;
   margin: 20px 0;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-  color: #4CAF50;
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+.sobre-contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sobre-paso {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-paso:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-paso h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.sobre-paso p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Estilos para el pie de página */
@@ -60,10 +107,53 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
 footer p {
   margin: 0;
+  font-size: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .sobre-contenido {
+      flex-direction: column;
+  }
+
+  .sobre-paso {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  section h2 {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.8rem;
+  }
+
+  nav ul li a {
+      font-size: 1rem;
+  }
+
+  section h2 {
+      font-size: 1.6rem;
+  }
+
+  .sobre-paso h3 {
+      font-size: 1.3rem;
+  }
+
+  .sobre-paso p {
+      font-size: 0.9rem;
+  }
 }
