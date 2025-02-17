@@ -6,8 +6,18 @@ body {
   padding: 0;
   background-color: #f8f9fa;
   color: #333;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+
+/* Estilos para el contenedor principal */
+.contenido-principal {
+  padding: 0 20px; /* Padding horizontal */
+  max-width: 1200px; /* Ancho máximo para el contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+/* Estilos para las secciones dentro del contenido principal */
+.contenido-principal section {
+  margin-bottom: 40px; /* Espacio entre secciones */
 }
 
 /* Estilos para el encabezado */
