@@ -1,35 +1,49 @@
+:root {
+  /* Definimos las variables de colores */
+  --color-primary: #09122C; 
+  --color-secondary: #3D8D7A; 
+  --color-accent: #B3D8A8; 
+  --color-text: #E17564; 
+  --color-background: #FBFFE4; 
+  --color-white: #FFFFFF; 
+}
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
+/* Clase container general */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 }
 
+/* Clase container para el navbar inferior */
 .containerNavBottom {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content:space-evenly;
-  align-items:center;
+  justify-content: space-evenly; /* Alineación diferente */
+  align-items: center;
   padding: 10px 0;
 }
 
 /* Estilos del primer nivel (navbar-top) */
 .navbar-top {
-  background-color: #4CAF50; /* Color de fondo */
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -38,11 +52,12 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+  color: var(--color-white);
 }
 
 .btn-test {
-  background-color: #f1c40f; /* Color del botón */
-  color: #333;
+  background-color: var(--color-accent);
+  color: var(--color-white);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -51,12 +66,12 @@ body {
 }
 
 .btn-test:hover {
-  background-color: #e67e22; /* Cambio de color al pasar el ratón */
+  background-color: var(--color-text);
 }
 
 /* Estilos del segundo nivel (navbar-bottom) */
 .navbar-bottom {
-  background-color: #333; /* Color de fondo */
+  background-color: var(--color-primary);
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -73,21 +88,21 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #f1c40f; /* Cambio de color al pasar el ratón */
+  color: var(--color-text);
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-  .container {
+  .container, .containerNavBottom {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
   }
 
   .navbar-top, .navbar-bottom {
