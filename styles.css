@@ -13,12 +13,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
-/* Estilos del header */
-header {
-  background-color: #4CAF50; /* Color de fondo del navbar */
+/* Estilos del primer nivel (navbar-top) */
+.navbar-top {
+  background-color: #4CAF50; /* Color de fondo */
   color: white;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,27 @@ header {
   margin: 0;
 }
 
-/* Estilos del navbar */
+.btn-test {
+  background-color: #f1c40f; /* Color del botón */
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-test:hover {
+  background-color: #e67e22; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos del segundo nivel (navbar-bottom) */
+.navbar-bottom {
+  background-color: #333; /* Color de fondo */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .nav-links {
   list-style: none;
   margin: 0;
@@ -50,7 +70,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #f1c40f; /* Color al pasar el ratón */
+  color: #f1c40f; /* Cambio de color al pasar el ratón */
 }
 
 /* Estilos responsivos */
@@ -60,6 +80,10 @@ header {
       align-items: flex-start;
   }
 
+  .navbar-top, .navbar-bottom {
+      text-align: center;
+  }
+
   .nav-links {
       flex-direction: column;
       width: 100%;
@@ -67,5 +91,9 @@ header {
 
   .nav-links li {
       margin: 10px 0;
+  }
+
+  .btn-test {
+      margin-top: 10px;
   }
 }
