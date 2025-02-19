@@ -57,7 +57,34 @@ body {
   color: var(--color-white);
 }
 
-.btn-test {
+.navbar-top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para el enlace de teléfono */
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el texto y el ícono */
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: var(--color-text); /* Coral al pasar el ratón */
+}
+
+.phone-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor; /* Hereda el color del texto */
+}
+
+.btn-top-navbar {
   background-color: var(--color-accent);
   color: var(--color-black);
   padding: 10px 20px;
@@ -67,9 +94,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.btn-test:hover {
-  background-color: var(--color-hover);
+.btn-top-navbar:hover {
+  background-color: var(--color-text);
+  color: var(--color-white);
 }
+
 
 /* Estilos del segundo nivel (navbar-bottom) */
 .navbar-bottom {
