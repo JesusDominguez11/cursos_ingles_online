@@ -20,6 +20,8 @@ body {
   color: var(--color-text);
 }
 
+
+/* ------------------------------------------------------NAVBAR----------------------------------------------------------------- */
 /* Clase container general */
 .container {
   width: 90%;
@@ -153,3 +155,107 @@ body {
       margin-top: 10px;
   }
 }
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------FOOTER----------------------------------------------------------------- */
+/* Estilos generales del footer */
+footer {
+  background-color: var(--color-primary); /* Azul oscuro */
+  color: var(--color-white);
+  padding: 40px 0 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--color-accent); /* Verde claro */
+}
+
+.footer-links, .footer-contact, .footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li, .footer-contact li, .footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-links a, .footer-contact a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+  color: var(--color-hover); /* Coral al pasar el ratón */
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: var(--color-white);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--color-hover); /* Coral al pasar el ratón */
+}
+
+/* Estilos para la sección inferior del footer */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-secondary); /* Verde oscuro */
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%;
+  }
+
+  .footer-social {
+      justify-content: center;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------- */
