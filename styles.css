@@ -3,9 +3,11 @@
   --color-primary: #09122C; 
   --color-secondary: #3D8D7A; 
   --color-accent: #B3D8A8; 
+  --color-hover: #E17564; 
   --color-text: #E17564; 
   --color-background: #FBFFE4; 
   --color-white: #FFFFFF; 
+  --color-black: #000000; 
 }
 
 /* Estilos generales */
@@ -57,7 +59,7 @@ body {
 
 .btn-test {
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-black);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -66,7 +68,7 @@ body {
 }
 
 .btn-test:hover {
-  background-color: var(--color-text);
+  background-color: var(--color-hover);
 }
 
 /* Estilos del segundo nivel (navbar-bottom) */
