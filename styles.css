@@ -97,7 +97,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--color-text);
+  color: var(--color-hover);
 }
 
 /* Estilos responsivos */
