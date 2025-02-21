@@ -160,6 +160,89 @@ body {
 
 
 
+/* ------------------------------------------------------MAIN CONTAINER----------------------------------------------------------------- */
+/* Estilos para el contenedor principal */
+.main-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px 0; /* Padding vertical */
+}
+
+/* Estilos para las secciones */
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--color-primary); /* Azul oscuro */
+}
+
+/* Estilos para las tarjetas de cursos */
+.course-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.course-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--color-secondary); /* Verde oscuro */
+}
+
+.course-card p {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-hover); /* Coral al pasar el ratón */
+}
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+
 
 /* ------------------------------------------------------FOOTER----------------------------------------------------------------- */
 /* Estilos generales del footer */
