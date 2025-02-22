@@ -250,7 +250,7 @@ body {
 
 /* Estilos para el contenedor principal */
 .main-container {
-  width: 90%;
+  width: 70%;
   max-width: 1200px;
   margin: 0 auto; /* Centra el contenido */
   padding: 20px 0; /* Padding vertical */
