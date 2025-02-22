@@ -163,9 +163,14 @@ body {
 /* ------------------------------------------------------MAIN CONTAINER----------------------------------------------------------------- */
 /* ------------------------------------------------------SECCION INICIO----------------------------------------------------------------- */
 /* Estilos para la sección de inicio */
+/* Estilos para la sección de inicio */
 .inicio-section {
   background-color: var(--color-background); /* Fondo claro */
-  padding: 80px 0; /* Más padding para darle más espacio */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 20px; /* Padding para evitar que el contenido toque los bordes */
 }
 
 .inicio-content {
@@ -174,7 +179,7 @@ body {
   justify-content: space-between;
   gap: 40px; /* Espacio entre el texto y la imagen */
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -214,9 +219,19 @@ body {
   max-width: 500px;
 }
 
-.inicio-image img {
+.inicio-image svg {
   width: 100%;
   height: auto;
+}
+
+@keyframes movePages {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.inicio-image svg path {
+  animation: movePages 3s infinite ease-in-out;
 }
 
 /* Estilos responsivos */
